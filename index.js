@@ -42,9 +42,19 @@ window.onscroll = function () {
   var totalPageHeight = document.body.scrollHeight;
   var scrollPoint = window.scrollY + window.innerHeight;
 
-  if (scrollPoint >= totalPageHeight + 150) {
+  if (scrollPoint >= totalPageHeight + 100) {
     document.querySelector(".footerFixed").style.display = "none";
   } else {
     document.querySelector(".footerFixed").style.display = "";
+  }
+};
+
+//questions
+const expand = (el) => {
+  let ans = el.getElementsByTagName("div")[0];
+  if (ans.style.maxHeight != "500px") {
+    ans.style.maxHeight = "500px";
+  } else {
+    ans.style.maxHeight = "0px";
   }
 };

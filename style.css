@@ -2,8 +2,7 @@ body {
   width: 100vw;
   padding: 0;
   margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   cursor: default;
   overflow-x: hidden;
 }
@@ -180,11 +179,13 @@ body {
   font-weight: bold;
 }
 
-.questionContainer > a {
+.ques {
   width: fit-content;
   display: block;
-  margin: 4vh 0 4vh 2vw;
+  margin: 4vh 0 0 2vw;
   color: black;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .footerContainer {
@@ -203,6 +204,7 @@ body {
   position: fixed;
   bottom: 0;
   height: 300px;
+  background: transparent;
 }
 
 .footerBackdrop {
@@ -210,6 +212,7 @@ body {
   height: 300px;
   position: relative;
   overflow: hidden;
+  background: transparent;
 }
 
 .footerMenuContainer {
@@ -291,4 +294,109 @@ body {
 
 .box > p:hover {
   text-decoration: dotted underline;
+}
+
+.ans {
+  max-height: 0px;
+  margin: 0 0 0 2vw;
+  color: #5f6368;
+  font-size: 14px;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 770px) {
+  .infoContainer {
+    width: 90%;
+    margin: 150px auto 50px auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbarTopWrapper {
+    padding: 15px 0;
+  }
+
+  .navbarTop {
+    font-size: 2.6vw;
+  }
+
+  .date-time {
+    font-size: 2.1vw;
+  }
+
+  .logo {
+    width: 35vw;
+    height: auto;
+  }
+
+  .discountImage {
+    display: none;
+  }
+
+  .innerContainer {
+    padding-top: 0;
+    margin: 15vh auto 0;
+  }
+
+  .whatText {
+    font-size: 1.1em;
+  }
+
+  .whatButton {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .infoContainer {
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .info {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
+  .aboutContainer {
+    padding: 5vh 0;
+  }
+
+  .menu {
+    width: 100%;
+    margin: auto;
+    height: 300px;
+  }
+
+  .box {
+    width: max-content;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box > i {
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+  .box > p {
+    font-size: 0.7em;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  .footerContainer {
+    width: 100%;
+    text-align: center;
+    color: #5f636886;
+    margin: 2vh 0;
+    font-size: 3vw;
+  }
 }
