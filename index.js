@@ -16,7 +16,6 @@ let MenuOpen = false;
 
 menu.addEventListener("click", () => {
   MenuOpen = !MenuOpen;
-  console.log(MenuOpen);
   if (MenuOpen) {
     document.querySelector("#menuArrow").className = "fa-solid fa-chevron-down";
     document.querySelector(".showMenu").innerHTML = "Hide Menu";
