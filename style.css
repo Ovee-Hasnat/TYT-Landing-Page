@@ -1,0 +1,294 @@
+body {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  cursor: default;
+  overflow-x: hidden;
+}
+
+.navbarTopWrapper {
+  width: 100%;
+  display: flex;
+  padding: 35px 0;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.navbarTop {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 0 5vw;
+}
+
+.motto {
+  color: #ffc000;
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 12px;
+  color: #5f6368;
+  cursor: default;
+}
+
+.date {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.innerContainer {
+  width: 80%;
+  padding-top: 100px;
+  margin: 15vh auto 0;
+}
+
+.discountImage {
+  width: 100%;
+  border: 1px solid #ffc000;
+}
+
+.what {
+  width: 100%;
+  margin: 10vh 0;
+}
+
+.whatTitle {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #5f6368;
+}
+
+.whatText {
+  text-align: center;
+  margin-top: 2vh;
+  font-weight: bold;
+  color: #5f6368;
+  font-size: 1.2em;
+}
+
+.whatButton {
+  display: inline-block;
+  margin: 20px 20px 0 20px;
+  padding: 15px 30px;
+  border: 1px solid #ffc000;
+  border-radius: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.need {
+  color: #ffc000;
+}
+
+.need:hover {
+  background-color: #ffc000;
+  color: white;
+}
+
+.am {
+  background-color: #ffc000;
+  color: white;
+}
+
+.am:hover {
+  background-color: white;
+  color: #ffc000;
+}
+
+.infoContainer {
+  width: 60%;
+  margin: 150px auto 50px auto;
+}
+
+.info {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+.lottieContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.lottie-text {
+  flex: 1;
+}
+
+.lottie-text > h3 {
+  font-size: 2em;
+  color: #ffc000;
+  font-weight: bold;
+}
+
+.lottie-text > p {
+  font-size: 1em;
+  color: #5f6368;
+  text-align: justify;
+}
+
+.paymentContainer {
+  width: 100%;
+  text-align: center;
+  color: #5f6368;
+}
+
+.payment-img {
+  width: 100%;
+}
+
+.aboutContainer {
+  padding: 15vh 0 5vh 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.aboutContainer > h1 {
+  color: #ffc000;
+  font-weight: bold;
+}
+
+.aboutContainer > p {
+  color: #5f6368;
+  text-align: justify;
+}
+
+.questionContainer {
+  width: 100%;
+  padding-bottom: 10vh;
+  margin-bottom: 40vh;
+}
+
+.questionContainer > h1 {
+  color: #ffc000;
+  font-weight: bold;
+}
+
+.questionContainer > a {
+  width: fit-content;
+  display: block;
+  margin: 4vh 0 4vh 2vw;
+  color: black;
+}
+
+.footerContainer {
+  width: 100%;
+  text-align: center;
+  color: #5f636886;
+  margin: 2vh 0;
+}
+
+.footerContainer > p > span:hover {
+  cursor: pointer;
+  text-decoration: dotted underline;
+}
+
+.footerFixed {
+  position: fixed;
+  bottom: 0;
+  height: 300px;
+}
+
+.footerBackdrop {
+  width: 100vw;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footerMenuContainer {
+  width: 100%;
+  position: absolute;
+  bottom: -200px;
+  background-color: #fff;
+  transition: all 0.4s ease;
+}
+
+/* .footerMenuContainer:hover {
+  transform: translateY(-200px);
+} */
+
+.menu {
+  width: 60%;
+  margin: auto;
+  height: 300px;
+}
+
+.parent {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.menubox1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.menubox2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.menubox3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.menubox4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.menubox5 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.menubox6 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.menubox7 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.menubox8 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.menubox9 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.box {
+  height: 100px;
+  color: #ffc000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin: auto;
+}
+
+.box > i {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.box > p {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.box > p:hover {
+  text-decoration: dotted underline;
+}
