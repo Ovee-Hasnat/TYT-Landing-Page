@@ -304,6 +304,27 @@ body {
   overflow-y: hidden;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5f6368;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffc000;
+}
+
+/* Media queries */
+
 @media screen and (max-width: 770px) {
   .infoContainer {
     width: 90%;
@@ -359,6 +380,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 2vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   }
 
   .reverse {
